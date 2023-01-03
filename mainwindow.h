@@ -18,8 +18,6 @@ public:
 private slots:
     void on_homeCacheBtn_clicked();
 
-    void on_menuBtn_clicked();
-
 private:
     Ui::MainWindow *ui;
 };

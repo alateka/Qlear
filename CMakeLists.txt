@@ -19,8 +19,8 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
-        qlearlib.cpp
-        qlearlib.h
+        qlearcore.cpp
+        qlearcore.h
         ${TS_FILES}
 )
 
