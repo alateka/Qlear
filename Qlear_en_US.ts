@@ -21,6 +21,7 @@
     <message>
         <location filename="mainwindow.ui" line="226"/>
         <source>Clear all user cache</source>
+        <oldsource>Clear all current user cache</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

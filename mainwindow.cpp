@@ -27,7 +27,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_homeCacheBtn_clicked()
 {
-    int resultMessageBox = QMessageBox::question(this, "WARNING", "This action will delete all applications cache. \n Do you are sure?");
+    int resultMessageBox = QMessageBox::question(this, "WARNING", "This action will delete all applications cache from .cache directory. \n Are you sure?");
 
     if ( resultMessageBox == QMessageBox::Yes) {
         qlear.removeUserCache();
