@@ -6,7 +6,8 @@
 #include <QMessageBox>
 
 // Project files
-#include "qlearcore.h"
+#include "../about/aboutwindow.h"
+#include "../../core/qlearcore.h"
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
@@ -33,5 +34,13 @@ void MainWindow::on_homeCacheBtn_clicked()
         qlear.removeUserCache();
         ui->logsBox->setText("User cache removed");
     }
+}
+
+
+void MainWindow::on_actionAbout_triggered()
+{
+    AboutWindow aboutWindow;
+    aboutWindow.setModal(true);
+    aboutWindow.exec();
 }
 

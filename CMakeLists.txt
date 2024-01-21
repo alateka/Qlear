@@ -16,11 +16,6 @@ set(TS_FILES Qlear_en_US.ts)
 
 set(PROJECT_SOURCES
         main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
-        qlearcore.cpp
-        qlearcore.h
         ${TS_FILES}
 )
 
@@ -45,6 +40,9 @@ else()
     else()
         add_executable(Qlear
             ${PROJECT_SOURCES}
+            gui/about/aboutwindow.h gui/about/aboutwindow.cpp gui/about/aboutwindow.ui
+            gui/main/mainwindow.h gui/main/mainwindow.cpp gui/main/mainwindow.ui
+            core/qlearcore.h core/qlearcore.cpp
         )
     endif()
 
